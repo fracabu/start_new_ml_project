@@ -1,6 +1,6 @@
 import os
 
-# Struttura del progetto
+# Project Structure
 PROJECT_STRUCTURE = {
     "data": ["raw", "processed", "features"],
     "output": ["ensemble", "evaluation", "metrics", "models", "optimization", "plots", "predictions"],
@@ -22,7 +22,7 @@ PROJECT_STRUCTURE = {
     "tests": ["initial_test.py"],
     "streamlit_app": ["app.py"],
     "root_files": {
-        ".gitignore": """# Ambiente Virtuale
+        ".gitignore": """# Virtual Environment
 venv/
 .env
 *.log
@@ -30,61 +30,68 @@ output/
 __pycache__/
 *.tmp
 """,
-        "requirements.txt": """# Librerie per la manipolazione e analisi dei dati
-pandas           # Manipolazione di dati strutturati in DataFrame.
-numpy            # Calcolo numerico efficiente con array multidimensionali.
-scipy            # Operazioni scientifiche e ottimizzazioni matematiche avanzate.
+        "requirements.txt": """# Libraries for data manipulation and analysis
+pandas           # Manipulate structured data in DataFrames.
+numpy            # Efficient numerical computation with multidimensional arrays.
+scipy            # Scientific operations and advanced mathematical optimization.
 
-# Librerie per il Machine Learning e l'analisi
-scikit-learn     # Algoritmi di Machine Learning: classificazione, regressione e clustering.
-joblib           # Salvataggio e caricamento di modelli ML e parallelizzazione.
-xgboost          # Libreria ottimizzata per gradient boosting.
-lightgbm         # Algoritmo rapido per il boosting su dataset grandi.
-catboost         # Gradient boosting con supporto automatico per variabili categoriche.
+# Libraries for Machine Learning and analysis
+scikit-learn     # Machine Learning algorithms: classification, regression, and clustering.
+joblib           # Save and load ML models; parallel processing.
+xgboost          # Optimized gradient boosting library.
+lightgbm         # Fast gradient boosting for large datasets.
+catboost         # Gradient boosting with automatic handling for categorical features.
 
-# Librerie per visualizzazioni
-matplotlib       # Creazione di grafici statici e personalizzati.
-seaborn          # Grafici statistici avanzati con una sintassi semplice.
-plotly           # Grafici interattivi e 3D per esplorazione dei dati.
-altair           # Visualizzazioni dichiarative basate su JSON e Vega.
-streamlit        # Creazione rapida di dashboard e applicazioni web interattive.
+# Visualization Libraries
+matplotlib       # Create static and customizable charts.
+seaborn          # Advanced statistical charts with simple syntax.
+plotly           # Interactive and 3D data visualizations.
+altair           # Declarative visualizations based on JSON and Vega.
+streamlit        # Quickly build interactive dashboards and web applications.
 
-# Librerie per elaborazione e validazione
-jsonschema       # Validazione di file JSON basati su schema.
-pydantic         # Validazione dei dati con modelli Python.
+# Libraries for data validation and processing
+jsonschema       # Validate JSON files against schemas.
+pydantic         # Data validation using Python models.
 
-# Librerie per integrazioni avanzate
-requests         # Gestione di chiamate HTTP per API.
-flask            # Framework leggero per creare API REST.
-sqlalchemy       # ORM per la gestione di database relazionali.
-pymysql          # Driver per connettere applicazioni Python a MySQL.
+# Libraries for advanced integrations
+requests         # Manage HTTP requests for APIs.
+flask            # Lightweight framework for creating REST APIs.
+sqlalchemy       # ORM to manage relational databases.
+pymysql          # Driver to connect Python applications to MySQL databases.
 
-# Librerie per automazione e performance
-openpyxl         # Lettura e scrittura di file Excel.
-watchdog         # Monitoraggio automatico di file e cartelle.
-psutil           # Monitoraggio delle performance del sistema.
+# Libraries for automation and performance
+openpyxl         # Read and write Excel files.
+watchdog         # Automatically monitor file and folder changes.
+psutil           # Monitor system performance (CPU, memory, etc.).
 
-# Librerie per la gestione di file e interfacce
-python-dotenv    # Caricamento delle variabili di ambiente da file .env.
+# Libraries for environment management
+python-dotenv    # Load environment variables from .env files.
 """,
-        "readme.md": """# Progetto Data Science
+        "readme.md": """# Data Science Project
 
-## Struttura
-- **data/**: Contiene i dati grezzi, processati e features.
-- **scripts/**: Contiene gli script principali per EDA, preprocessing e training.
-- **output/**: Modelli addestrati, predizioni e grafici.
-- **tests/**: File di test iniziali.
+## Structure
+- **data/**: Contains raw, processed, and feature-extracted data.
+- **scripts/**: Includes main scripts for EDA, preprocessing, and training.
+- **output/**: Trained models, predictions, and visualizations.
+- **tests/**: Contains test scripts for initial validation.
 """
     }
 }
 
 def create_project_structure(project_name, base_path="C:\\Users\\utente"):
+    """
+    Creates a structured directory for a data science project.
+
+    Args:
+        project_name (str): The name of the project.
+        base_path (str): The root directory where the project will be created.
+    """
     project_path = os.path.join(base_path, project_name)
-    print(f"Creazione del progetto '{project_name}' nella directory '{base_path}'...\n")
+    print(f"Creating project '{project_name}' in directory '{base_path}'...\n")
     
     os.makedirs(project_path, exist_ok=True)
 
-    # Creazione delle cartelle e file
+    # Create directories and files
     for folder, items in PROJECT_STRUCTURE.items():
         if folder == "root_files":
             for file_name, content in items.items():
@@ -96,12 +103,12 @@ def create_project_structure(project_name, base_path="C:\\Users\\utente"):
             for item in items:
                 open(os.path.join(folder_path, item), "w").close()
 
-    print(f"✅ Progetto '{project_name}' creato con successo!")
-    print(f"📂 Vai nella cartella del progetto con: cd {project_path}")
+    print(f"✅ Project '{project_name}' created successfully!")
+    print(f"📂 Navigate to the project folder with: cd {project_path}")
 
 if __name__ == "__main__":
-    project_name = input("Inserisci il nome del progetto: ").strip()
+    project_name = input("Enter the project name: ").strip()
     if project_name:
         create_project_structure(project_name)
     else:
-        print("❌ Nome del progetto non valido!")
+        print("❌ Invalid project name!")
