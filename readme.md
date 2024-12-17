@@ -2,7 +2,6 @@
 
 ![ML Project Generator](/A_vintage-style_cartoon_illustration_with_a_nerdy_.jpeg)
 
-
 Questo script Python **genera una struttura completa per progetti di Machine Learning** in pochi secondi.  
 Include **cartelle organizzate**, script vuoti pronti all'uso e un file `requirements.txt` dettagliato per velocizzare l'avvio di nuovi progetti.
 
@@ -52,6 +51,29 @@ Esempio della struttura del progetto:
 ├── requirements.txt   # Dipendenze dettagliate
 └── readme.md          # Documentazione base del progetto
 ```
+
+---
+
+## **🆕 Changelog e Miglioramenti**
+
+### Versione 1.1.0 (Dicembre 2024)
+
+**🐛 Bug Fix:**
+- Risolto il problema critico della creazione errata delle sottocartelle
+- Corretta la generazione delle directory in `data/` e `output/` che venivano create come file invece di cartelle
+- Aggiunto il supporto per `.gitkeep` nelle cartelle vuote
+
+**✨ Nuove Funzionalità:**
+- Implementato sistema di logging dettagliato durante la creazione del progetto
+- Aggiunta gestione errori robusta con messaggi informativi
+- Supporto UTF-8 esplicito per la creazione dei file
+- Distinzione automatica tra file e cartelle durante la generazione
+
+**🔧 Miglioramenti Tecnici:**
+- Ottimizzata la logica di creazione delle directory
+- Aggiunto dizionario `DIRECTORY_FOLDERS` per una migliore gestione della struttura
+- Migliorato il feedback visuale durante la creazione del progetto
+- Implementata validazione del nome del progetto
 
 ---
 
@@ -140,7 +162,10 @@ python-dotenv
 
 - **Organizzazione chiara**: Tutte le fasi del ciclo ML hanno script dedicati.  
 - **Visualizzazione immediata**: Integra **Streamlit** per una dashboard rapida.  
-- **File `requirements.txt` completo**: Dipendenze pronte all'uso per installazione rapida.  
+- **File `requirements.txt` completo**: Dipendenze pronte all'uso per installazione rapida.
+- **Affidabilità migliorata**: Bug fix critici e gestione errori robusta
+- **Feedback dettagliato**: Logging completo durante la creazione del progetto
+- **Gestione Git ottimizzata**: Supporto per cartelle vuote con `.gitkeep`
 
 ---
 
@@ -157,9 +182,8 @@ python-dotenv
 Se lo trovi utile o hai suggerimenti per migliorarlo, condividi il tuo feedback!  
 Puoi usarlo, modificarlo e proporre miglioramenti. 🚀  
 
-Se vuoi provarlo o dare un’occhiata, fammelo sapere!  
+Se vuoi provarlo o dare un'occhiata, fammelo sapere!  
 su [LinkedIn](https://www.linkedin.com/in/francesco-~-capurso-5801031a9/) per discutere o condividere idee.
 **Ogni contributo è benvenuto.** 💡  
 
 ---
-
