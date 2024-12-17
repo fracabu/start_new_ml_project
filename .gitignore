@@ -1,0 +1,154 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.env
+.venv
+env.bak/
+venv.bak/
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+.project
+.pydevproject
+.settings/
+.vs/
+
+# Project specific
+data/raw/*
+data/processed/*
+data/features/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/features/.gitkeep
+
+output/models/*
+output/predictions/*
+output/evaluation/*
+output/plots/*
+output/metrics/*
+output/ensemble/*
+output/optimization/*
+!output/models/.gitkeep
+!output/predictions/.gitkeep
+!output/evaluation/.gitkeep
+!output/plots/.gitkeep
+!output/metrics/.gitkeep
+!output/ensemble/.gitkeep
+!output/optimization/.gitkeep
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+logs/
+*.pkl
+*.joblib
+*.h5
+*.hdf5
+
+# Model files (uncomment if you want to ignore them)
+# *.pt
+# *.pth
+# *.weights
+# *.pb
+# *.tflite
+# *.onnx
+
+# OS specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Large media files
+*.csv
+*.tsv
+*.json
+*.parquet
+*.feather
+*.arrow
+*.mp3
+*.mp4
+*.wav
+*.avi
+*.mov
+*.mkv
+*.zip
+*.gz
+*.tar
+*.rar
+*.7z
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*~
+
+# Streamlit
+.streamlit/
+
+# Documentation
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# Coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Profiling
+*.prof
+*.stats
+
+# Authentication
+*.key
+*.pem
+*.p12
+*.pfx
+credentials.json
+token.json
+config.ini
+secrets.*
