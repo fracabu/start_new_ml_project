@@ -175,12 +175,7 @@ python-dotenv
 - [Scikit-Learn Quickstart](https://scikit-learn.org/stable/getting_started.html)  
 - [Pandas Documentation](https://pandas.pydata.org/docs/getting_started/index.html)  
 
----
-
-## **🌟 Provalo e Condividi la Tua Opinione**
-
-Se lo trovi utile o hai suggerimenti per migliorarlo, condividi il tuo feedback!  
-Puoi usarlo, modificarlo e proporre miglioramenti. 🚀  
+--- 
 
 Se vuoi provarlo o dare un'occhiata, fammelo sapere!  
 su [LinkedIn](https://www.linkedin.com/in/francesco-~-capurso-5801031a9/) per discutere o condividere idee.
