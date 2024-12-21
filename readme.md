@@ -1,7 +1,5 @@
 # 🛠️ **ML Project Generator con Supporto Streamlit**  
 
-![ML Project Generator](/A_vintage-style_cartoon_illustration_with_a_nerdy_.jpeg)
-
 Questo script Python **genera una struttura completa per progetti di Machine Learning** in pochi secondi.  
 Include **cartelle organizzate**, script vuoti pronti all'uso e un file `requirements.txt` dettagliato per velocizzare l'avvio di nuovi progetti.
 
@@ -175,7 +173,12 @@ python-dotenv
 - [Scikit-Learn Quickstart](https://scikit-learn.org/stable/getting_started.html)  
 - [Pandas Documentation](https://pandas.pydata.org/docs/getting_started/index.html)  
 
---- 
+---
+![ML Project Generator](/A_vintage-style_cartoon_illustration_with_a_nerdy_.jpeg)
+## **🌟 Provalo e Condividi la Tua Opinione**
+
+Se lo trovi utile o hai suggerimenti per migliorarlo, condividi il tuo feedback!  
+Puoi usarlo, modificarlo e proporre miglioramenti. 🚀  
 
 Se vuoi provarlo o dare un'occhiata, fammelo sapere!  
 su [LinkedIn](https://www.linkedin.com/in/francesco-~-capurso-5801031a9/) per discutere o condividere idee.
