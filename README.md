@@ -18,20 +18,28 @@
 
 ---
 
+## How It Works
+
+<p align="center">
+  <img src="docs/assets/streamline-setup.png" alt="Streamlining ML Project Setup" width="700" />
+</p>
+
+---
+
+## Features
+
+<p align="center">
+  <img src="docs/assets/features.png" alt="Project Features" width="800" />
+</p>
+
+---
+
 <a name="english"></a>
 ## :gb: English
 
 ### Overview
 
 Python script to quickly generate a complete structure for Machine Learning projects. Creates directories, scripts, and dependencies automatically.
-
-### Features
-
-- **Auto-Generate Structure** - Complete ML project scaffold
-- **Scripts Templates** - Pre-built data processing scripts
-- **Dependencies Setup** - Auto-configured requirements.txt
-- **Best Practices** - Industry-standard folder organization
-- **Streamlit Ready** - Dashboard template included
 
 ### Generated Structure
 
